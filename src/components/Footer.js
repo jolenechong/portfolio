@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
             </div>
             </div>
-            <p id="footerTXT">© 2021 Jolene Chong</p>
+            <p id="footerTXT">© 2021 Jolene</p>
         </footer>
         </>
     )
