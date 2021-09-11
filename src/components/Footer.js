@@ -20,21 +20,21 @@ export default function Footer() {
                 </p>
                 <br></br>
 
-                <Link
+                <a
                   className="fa fa-envelope fa-lg"
                   mailto="mailto:jolenechong7@gmail.com"
-                ></Link>
+                ></a>
 
-                <Link
+                <a
                   className="fa fa-linkedin fa-lg"
                   href="https://www.linkedin.com/in/jolene-chong/"
                   target="_blank"
-                />
-                <Link
+                ></a>
+                <a
                   className="fa fa-github fa-lg"
                   href="https://github.com/jolenechong"
                   target="_blank"
-                />
+                ></a>
               </div>
               <div className="column">
                 <h3>Experience</h3>
