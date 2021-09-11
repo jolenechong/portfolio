@@ -31,6 +31,9 @@ export default function HeroSection() {
           <div style={{ flex: 1 }}>
             <form name="contact" method="POST" onSubmit='submit'>
               <input type="hidden" name="form-name" value="contact"/>
+              <div hidden>
+                <input name='bot-field'/>
+              </div>
 
               <input type="text" placeholder="Name" name='first-name' required />
               <input type="email" placeholder="Email" name='email' required />
