@@ -1,0 +1,111 @@
+.cardOverlay {
+  position: absolute;
+  top: 75%;
+  left: 0;
+  padding: 10px;
+  background: linear-gradient(2deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  color: white;
+  transition: 400ms;
+  width: 100%;
+}
+#sideprojects {
+  color: var(--color-text);
+}
+.funProjectCard {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 20px;
+  /* border: 1px solid rgb(216, 216, 216); */
+  margin: 10px;
+  display: inline-block;
+}
+.funProjectCard img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.funProjectCard:hover > .cardOverlay {
+  top: 50%;
+}
+
+.projectsFun div {
+  border: 2px var(--tab-border) solid;
+  color: var(--tab-border);
+  padding: 10px;
+  width: auto;
+  margin: 5px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#bus,
+#portfolio,
+#QR {
+  display: none;
+}
+
+.projectsFun div:hover {
+  background-color: grey;
+  color: white;
+  transition: 400ms;
+}
+
+.projectsFun a {
+  text-decoration: none;
+  color: var(--tab-border);
+}
+
+.projectsFun div:hover a {
+  color: white;
+}
+
+/* .active {
+  background-color: grey;
+  color: white;
+} */
+
+.tabcontent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .tabcontent{
+    display: none;
+} */
+
+#funProjectsContainer {
+  display: flex;
+  justify-content: center;
+  /* max-width: 1200px; */
+  padding: 50px 0;
+}
+.cardOverlay a {
+  color: #30c3cd;
+}
+
+.cardOverlay i {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.cardOverlay .links {
+  position: absolute;
+  top: 20px;
+  left: 75%;
+}
+@media screen and (max-width: 400px) {
+  .funProjectCard {
+    width: 90%;
+  }
+}
