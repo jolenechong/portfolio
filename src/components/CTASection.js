@@ -29,7 +29,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div style={{ flex: 1 }}>
-            <form name="contact" method="POST" data-netlify="true" onSubmit='submit'>
+            <form name="contact" method="POST" onSubmit='submit'>
               <input type="hidden" name="form-name" value="contact"/>
 
               <input type="text" placeholder="Name" name='first-name' required />
