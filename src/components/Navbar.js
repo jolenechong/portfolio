@@ -116,7 +116,7 @@ function Navbar() {
 
           <a
             className="fa fa-linkedin fa-lg"
-            href="https://www.linkedin.com/in/jolenechong7/"
+            href="https://www.linkedin.com/in/jolene-chong/"
             target="_blank"
           />
           <a
