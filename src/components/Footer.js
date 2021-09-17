@@ -51,8 +51,6 @@ export default function Footer() {
                 <Link to="#home">Home</Link>
                 <br />
                 <Link to="#projects">Projects</Link>
-                <br />
-                <Link to='/resume'>☁️Resume</Link>
               </div>
             </div>
           </div>
