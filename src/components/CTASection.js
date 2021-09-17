@@ -35,9 +35,19 @@ export default function HeroSection() {
                 <input name='bot-field'/>
               </div>
 
-              <input type="text" placeholder="Name" name='first-name' required />
-              <input type="email" placeholder="Email" name='email' required />
-              <textarea placeholder="Type your message here..." name='message' required />
+              <div className='formQuestion'>
+                <input type="text" name='first-name' required />
+                <label for='first-name'>Name</label>
+              </div>
+              <div className='formQuestion'>
+                <input type="email" name='email' required />
+                <label for='email'>Email</label>
+              </div>
+              <div className='formQuestion'>
+                <textarea name='message' required />
+                <label for='message'>Your Message</label>
+              </div>
+
               <button type="submit">Submit</button>
             </form>
           </div>

@@ -13,15 +13,7 @@
   color: grey;
 }
 
-input[type='text']{
-  border: #30c3cd solid 1px;
-  outline: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  background-color: var(--form-bg);
-  color: var(--color-text);
-}
+/* remove form bg var color
 input[type='email']{
   border: #30c3cd solid 1px;
   outline: none;
@@ -30,20 +22,92 @@ input[type='email']{
   margin: 10px;
   background-color: var(--form-bg);
   color: var(--color-text);
-}
-textarea{
-  max-width: 375px;
-  width: 94%;
-  resize: none;
-  height: 120px;
-  border: #30c3cd solid 1px;
-  outline: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  background-color: var(--form-bg);
+} */
+
+input[type="text"] {
+  border: none;
+  outline: 0;
+  border-bottom: #30c3cd solid 2px;
+  background-color: transparent;
   color: var(--color-text);
 }
+
+input[type="email"] {
+  border: none;
+  outline: 0;
+  border-bottom: #30c3cd solid 2px;
+  background-color: transparent;
+  color: var(--color-text);
+}
+
+textarea{
+  border: none;
+  outline: 0;
+  border-bottom: #30c3cd solid 2px;
+  background-color: transparent;
+  color: var(--color-text);
+  max-width: 375px;
+  width: 94%;
+  resize: vertical;
+}
+
+label {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  pointer-events: none;
+  font-size: 0.8rem;
+  color:var(--color-text);
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-bottom: #30c3cd solid 2px;
+  outline: 0;
+}
+
+/* input something */
+input[type="text"]:invalid,
+input[type="email"]:invalid,
+textarea:invalid {
+  border-bottom: grey solid 2px;
+  outline: 0;
+}
+
+input[type="text"]:valid ~ label,
+input[type="email"]:valid ~ label,
+textarea:valid ~ label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #30c3cd;
+}
+/* end of input */
+
+/* move label up and change its color on focus */
+input[type="text"]:focus ~ label,
+input[type="email"]:focus ~ label,
+textarea:focus ~ label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #30c3cd;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-bottom: #30c3cd solid 2px;
+}
+/* end */
 
 button[type='submit']{
   border: 0;
@@ -53,12 +117,18 @@ button[type='submit']{
   border-radius: 5px;
   margin: 5px 10px 10px 10px;
   display: block;
-  background-color: #36a062;
+  background-color: #30c3cd;
 }
 
 form{
   margin: auto;
   max-width: 400px;
+}
+
+.formQuestion {
+  position: relative;
+  padding: 10px;
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 960px) {
