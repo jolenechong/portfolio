@@ -52,7 +52,7 @@ export default function Footer() {
                 <br />
                 <Link to="#projects">Projects</Link>
                 <br />
-                <a>☁️Resume</a>
+                <Link to='/resume'>☁️Resume</Link>
               </div>
             </div>
           </div>
