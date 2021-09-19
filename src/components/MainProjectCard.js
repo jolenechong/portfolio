@@ -29,6 +29,8 @@ const MainProjectCard = (props) => {
             >
               Project Details
             </Link>}
+            {props.linktoALT &&
+              <a href={props.linktoALT} style={{ textDecoration: "underline", paddingRight: "30px" }}> Project Details</a>}
           </div>
         </div>
       </section>

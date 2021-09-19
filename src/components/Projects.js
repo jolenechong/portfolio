@@ -39,6 +39,7 @@ export default function Projects() {
           src={ChatHealth}
           // linkto="https://github.com/jolenechong/ChatHealth"
           title="ChatHealth WebApp"
+          linktoALT="https://github.com/jolenechong/ChatHealth#readme"
           stack="NodeJS, VanilaJS, Bored API, Socket.io"
           site="https://chat-health.herokuapp.com/"
           code="https://github.com/jolenechong/ChatHealth"
