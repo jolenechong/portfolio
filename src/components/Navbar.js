@@ -80,7 +80,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <LLink
-                to="#projects"
+                to="/#projects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
@@ -89,7 +89,7 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <LLink
-                to="#sideprojects"
+                to="/#funProjects"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
