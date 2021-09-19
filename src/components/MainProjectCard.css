@@ -77,3 +77,6 @@
 .cardText .stack {
   color: #30c3cd;
 }
+#projects > h1{
+  color:var(--color-text);
+}

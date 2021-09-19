@@ -1,20 +1,40 @@
 import './FunProjectsCard.css'
+import LanguageColor from './LanguageColor'
+import { useState, useEffect } from 'react'
 
 const FunProjectsCard = (props) => {
+    const colors = {
+        JavaScript : "#efdf54",
+        HTML : "#d94b23",
+        Python : "#3f73a6"
+    }
+
+    const [repo, setRepo] = useState([]);
+
+    useEffect(() => {
+        fetch("https://api.github.com/users/jolenechong/repos")
+        .then((response) => response.json())
+        .then((data) => {
+            for(var i= 0; i < data.length;i++){
+                if (props.repo == data[i].name){
+                    setRepo(data[i].homepage)
+                }
+                
+            }
+        });
+    },[]);
+
     return (
-        <>
-            <div className='funProjectCard'>
-                <img src={props.src} alt={props.alt}/>
-                <div className='cardOverlay'>
-                    <h2 style={{padding:'12px 5px',}}>{props.title}</h2>
-                <div className="links">
-                    {props.site && <a href={props.site} target='_blank'><i class="fas fa-globe"></i></a>}
-                    {props.site && <a href={props.code} target='_blank'><i class="fab fa-github"></i></a>}
-                </div>
-                    <p style={{padding: '10px 0',}}>{props.description}</p>
-                </div>
-            </div>
-        </>
+        <div className='cardRepo'>
+        <h3>{props.repo}</h3>
+        <p>{props.description}
+        </p>
+        {repo && <a href={repo} target='_blank'><i className="fas fa-globe"></i></a>}
+        <a href={props.link} target='_blank'><i className="fab fa-github"></i></a>
+
+        <p className='language'><LanguageColor color={colors[props.language]}></LanguageColor>{props.language}</p>
+
+    </div>
     )
 }
 

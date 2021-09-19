@@ -15,12 +15,12 @@ const MainProjectCard = (props) => {
             <p className="description">{props.description}</p>
             {props.site && (
               <a href={props.site} target="_blank">
-                <i class="fas fa-globe"></i>
+                <i className="fas fa-globe"></i>
               </a>
             )}
             {props.code && (
               <a href={props.code} target="_blank">
-                <i class="fab fa-github"></i>
+                <i className="fab fa-github"></i>
               </a>
             )}
             {props.linkto && <Link

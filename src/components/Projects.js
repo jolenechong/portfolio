@@ -8,21 +8,25 @@ export default function Projects() {
   return (
     <>
       <section id="projects" style={{ paddingTop: "50px" }}>
+      <h1 style={{    fontFamily: "Source Code Pro",
+    fontSize:'25px',
+    textAlign: 'center',
+    paddingBbottom: '10px'}}>Web Development Projects</h1>
         {/* <MainProjectCard
           src={thecosypawsIMG}
           title="PastaWorks"
           stack="ReactJS"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis libero nisi."
         /> */}
-        {/* <MainProjectCard
+        <MainProjectCard
           src={KamogaWebDev}
           linkto="/project1"
           title="Kamoga"
           stack="EditorX, HTML/CSS and Javascript"
           site="https://nyan285.editorx.io/kamoga"
-          code=""
+          code="https://github.com/jolenechong/kamogaEcommerceSnippets"
           description="A website for a client with Booking Function for Speakers and custom built components."
-        /> */}
+        />
         <MainProjectCard
           src={thecosypawsIMG}
           linkto="/project2"
@@ -41,7 +45,7 @@ export default function Projects() {
           code="https://github.com/jolenechong/ChatHealth"
           description="With ChatHealth we would be able to rant annonymously and get your mind off your struggles."
         />
-        <MainProjectCard
+        {/* <MainProjectCard
           src="https://i.ibb.co/0h3mqy1/Screenshot-2021-09-02-113229.png"
           // linkto=""
           title="Full-stack Movie App"
@@ -49,7 +53,7 @@ export default function Projects() {
           // site="https://thecosypaws.com.sg/"
           // code=""
           description="[UNDER WORKS] Keep track of the movies you watched and the ones you like."
-        />
+        /> */}
       </section>
     </>
   );

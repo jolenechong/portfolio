@@ -29,7 +29,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div style={{ flex: 1 }}>
-            <form name="contact" method="POST" onSubmit='submit'>
+            <form name="contact" method="POST">
               <input type="hidden" name="form-name" value="contact"/>
               <div hidden>
                 <input name='bot-field'/>
@@ -37,15 +37,15 @@ export default function HeroSection() {
 
               <div className='formQuestion'>
                 <input type="text" name='first-name' required />
-                <label for='first-name'>Name</label>
+                <label htmlFor='first-name'>Name</label>
               </div>
               <div className='formQuestion'>
                 <input type="email" name='email' required />
-                <label for='email'>Email</label>
+                <label htmlFor='email'>Email</label>
               </div>
               <div className='formQuestion'>
                 <textarea name='message' required />
-                <label for='message'>Your Message</label>
+                <label htmlFor='message'>Your Message</label>
               </div>
 
               <button type="submit">Submit</button>

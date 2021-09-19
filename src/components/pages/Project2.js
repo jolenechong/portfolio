@@ -14,7 +14,7 @@ export default function Project1() {
         src={thecosypawsIMG1}
         src1={thecosypawsIMG3}
         src2={thecosypawsIMG2}
-        site="https://thecosypaws.com"
+        site="https://thecosypaws.com.sg/"
         code="https://github.com/jolenechong/TheCosyPaws"
         stack="Shopify, HTML/CSS, Javsscript and Figma"
         role="Freelance Developer and Designer"

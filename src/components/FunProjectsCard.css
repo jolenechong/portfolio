@@ -1,111 +1,39 @@
-.cardOverlay {
-  position: absolute;
-  top: 75%;
-  left: 0;
-  padding: 10px;
-  background: linear-gradient(2deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  color: white;
-  transition: 400ms;
-  width: 100%;
-}
-#sideprojects {
+.cardRepo{
+  background-color: var(--secondary-bg);
   color: var(--color-text);
-}
-.funProjectCard {
-  position: relative;
-  width: 400px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 20px;
-  /* border: 1px solid rgb(216, 216, 216); */
-  margin: 10px;
-  display: inline-block;
-}
-.funProjectCard img {
-  width: 400px;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.funProjectCard:hover > .cardOverlay {
-  top: 50%;
-}
-
-.projectsFun div {
-  border: 2px var(--tab-border) solid;
-  color: var(--tab-border);
-  padding: 10px;
-  width: auto;
-  margin: 5px 10px;
+  border:1px solid var(--secondary-border);
   border-radius: 10px;
-  display: inline-block;
-}
-
-#bus,
-#portfolio,
-#QR {
-  display: none;
-}
-
-.projectsFun div:hover {
-  background-color: grey;
-  color: white;
+  padding: 20px;
+  position: relative;
+  max-width: 400px;
+  margin: auto;
+  margin: 10px;
+  flex: 2;
+  min-width: 350px;
+  min-height: 125px;
   transition: 400ms;
 }
-
-.projectsFun a {
-  text-decoration: none;
-  color: var(--tab-border);
-}
-
-.projectsFun div:hover a {
-  color: white;
-}
-
-/* .active {
-  background-color: grey;
-  color: white;
-} */
-
-.tabcontent {
-  animation: fadeEffect 1s; /* Fading effect takes 1 second */
-}
-
-/* Go from zero to full opacity */
-@keyframes fadeEffect {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-/* .tabcontent{
-    display: none;
-} */
-
-#funProjectsContainer {
-  display: flex;
-  justify-content: center;
-  /* max-width: 1200px; */
-  padding: 50px 0;
-}
-.cardOverlay a {
-  color: #30c3cd;
-}
-
-.cardOverlay i {
-  padding: 10px;
-  font-size: 20px;
-}
-
-.cardOverlay .links {
+.language{
   position: absolute;
-  top: 20px;
-  left: 75%;
+  top: 15px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
 }
-@media screen and (max-width: 400px) {
-  .funProjectCard {
-    width: 90%;
-  }
+
+.cardRepo i{
+  color: #30c3cd;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.cardRepo:hover{
+  transform: rotate(-2deg);
+}
+
+.cardRepo p{
+  color:rgb(179, 179, 179);
 }

@@ -71,7 +71,7 @@ html {
 
 html[data-theme="dark"] {
   --bg: #1a1f26;
-  --color-text: white;
+  --color-text: rgb(240, 240, 240);
   --secondary-bg: #15253c;
   --secondary-border: #1f3758;
   --tab-border: white;

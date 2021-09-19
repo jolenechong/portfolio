@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
 import "../App.css";
-import { Button } from "./Button";
 import "./HeroSection.css";
 
 export default function HeroSection() {
@@ -14,17 +12,18 @@ export default function HeroSection() {
       </p>
       <br />
       <div style={{ maxWidth: "500px", width: "100%" }}>
-        <span class="categories">.webdesign </span>
-        <span class="categories">.reactJS </span>
-        <span class="categories">.javascript </span>
-        <span class="categories">.html/css</span>
+        <span className="categories">.html/css</span>
+        <span className="categories">.javascript </span>
+        <span className="categories">.reactJS </span>
+        <span className="categories">.webdesign </span>
+        
 
-        <span class="categories">.python </span>
-        <span class="categories">.webflow </span>
-        <span class="categories">.editorX </span>
-        <span class="categories">.shopify </span>
+        <span className="categories">.python </span>
+        <span className="categories">.webflow </span>
+        <span className="categories">.editorX </span>
+        <span className="categories">.shopify </span>
       </div>
-      <i class="fas fa-arrow-down" id="arrowDown"></i>
+      <i className="fas fa-arrow-down" id="arrowDown"></i>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.language span{
+    display: inline-block;
+    /* background-color: rgb(255, 246, 192); */
+    width: 20px;
+    height: 20px;
+    border-radius: 150%;
+    margin-right: 7px;
+}
