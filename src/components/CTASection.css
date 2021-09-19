@@ -13,17 +13,6 @@
   color: grey;
 }
 
-/* remove form bg var color
-input[type='email']{
-  border: #30c3cd solid 1px;
-  outline: none;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  background-color: var(--form-bg);
-  color: var(--color-text);
-} */
-
 input[type="text"] {
   border: none;
   outline: 0;

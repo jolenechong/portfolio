@@ -24,7 +24,7 @@
 
 .cardRepo i{
   color: #30c3cd;
-  font-size: 1.2rem;
+  font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
   margin-right: 5px;
@@ -35,5 +35,5 @@
 }
 
 .cardRepo p{
-  color:rgb(179, 179, 179);
+  color:var(--secondary-color-text);
 }
