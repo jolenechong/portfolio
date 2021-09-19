@@ -7,7 +7,7 @@ const FunProjects = () => {
   const [repo, setRepo] = useState([]);
 
   useEffect(() => {
-    fetch("https://gh-pinned-repos-5l2i19um3.vercel.app/?username=jolenechong")
+    fetch("https://api.github.com/users/jolenechong/starred")
       .then((response) => response.json())
       .then((data) => {
         setRepo(data);
