@@ -19,10 +19,9 @@ const FunProjects = () => {
       <section id="funProjects">
         <h1>Recent projects from Github</h1>
         <p>
-          Interested in my projects outside of web development? These are my
-          pinned repos pulled from Github API. Click on{" "}
+          Interested in projects outside of web development? Click on{" "}
           <i className="fas fa-globe"></i> to view the live sites and{" "}
-          <i className="fab fa-github"></i> to view the source code on github.
+          <i className="fab fa-github"></i> to view the more details/source code on github.
         </p>
         <div className="funProjContainer">
           {repo.length > 0 ? (

@@ -42,7 +42,7 @@
 @media only screen and (max-width: 801px) {
   #mainProjects .card {
     flex-direction: column;
-    margin-bottom: 175px;
+    margin-bottom: 200px;
   }
   #mainProjects .cardText {
     position: absolute;

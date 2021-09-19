@@ -3,15 +3,14 @@ import thecosypawsIMG from "../images/theCosyPawsWebDev.png";
 import KamogaWebDev from "../images/KamogaWebDev.png";
 import ChatHealth from "../images/ChatHealth.png";
 import MainProjectCard from "./MainProjectCard";
+import "./FunProjects.css";
 
 export default function Projects() {
   return (
     <>
       <section id="projects" style={{ paddingTop: "50px" }}>
-      <h1 style={{    fontFamily: "Source Code Pro",
-    fontSize:'25px',
-    textAlign: 'center',
-    paddingBbottom: '10px'}}>Web Development Projects</h1>
+        <h1>Web Development Projects</h1>
+        <p>Looking for freelance work? These are some of my freelance projects/best works in web dev.</p>
         {/* <MainProjectCard
           src={thecosypawsIMG}
           title="PastaWorks"
