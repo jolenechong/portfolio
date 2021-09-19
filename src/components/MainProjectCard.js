@@ -7,7 +7,7 @@ const MainProjectCard = (props) => {
       <section id="mainProjects">
         <div className="card">
           <div className="cardImg">
-            <img loading='lazy' src={props.src} alt={props.title} />
+            <img src={props.src} alt={props.title} />
           </div>
           <div className="cardText">
             <h2>{props.title}</h2>

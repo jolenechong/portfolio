@@ -30,7 +30,7 @@ const FunProjects = () => {
               <Repo key={repoDetails.id} {...repoDetails} />
             ))
           ) : (
-            <h1>no pinned repos found</h1>
+            <Repo repo="LOADING..."/>
           )}
         </div>
       </section>
