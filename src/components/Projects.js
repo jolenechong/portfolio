@@ -1,6 +1,6 @@
 import React from "react";
 import thecosypawsIMG from "../images/theCosyPawsWebDev.png";
-import KamogaWebDev from "../images/KamogaWebDev.png";
+import NYPLIT from "../images/NYPLITWebDev.png";
 import ChatHealth from "../images/ChatHealth.png";
 import MainProjectCard from "./MainProjectCard";
 import "./FunProjects.css";
@@ -18,13 +18,13 @@ export default function Projects() {
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis libero nisi."
         /> */}
         <MainProjectCard
-          src={KamogaWebDev}
-          linkto="/project1"
-          title="Kamoga"
-          stack="EditorX, HTML/CSS and Javascript"
-          site="https://nyan285.editorx.io/kamoga"
-          code="https://github.com/jolenechong/kamogaEcommerceSnippets"
-          description="A website for a client with Booking Function for Speakers and custom built components."
+          src={NYPLIT}
+          // linkto="/project1"
+          title="NYP LIT Website"
+          stack="HTML/CSS and Javascript"
+          site="https://nyp-lit.github.io"
+          code="https://github.com/nyp-lit/nyp-lit.github.io"
+          description="Custom designed and built for NYP LIT (Ladies In Tech), a Special Interest Group in NYP."
         />
         <MainProjectCard
           src={thecosypawsIMG}

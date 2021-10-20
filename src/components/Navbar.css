@@ -130,7 +130,7 @@ border-right: 1px solid rgba( 255, 255, 255, 0.18 );
     display: block;
     position: fixed;
     /* top: 70vh; */
-    bottom: 15vh;
+    bottom: 20vh;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
