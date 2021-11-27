@@ -1,7 +1,7 @@
 import React from "react";
-import thecosypawsIMG from "../images/theCosyPawsWebDev.png";
-import NYPLIT from "../images/NYPLITWebDev.png";
-import ChatHealth from "../images/ChatHealth.png";
+import thecosypawsIMG from "../images/theCosyPawsWebDev.webp";
+import NYPLIT from "../images/NYPLITWebDev.webp";
+import ChatHealth from "../images/ChatHealth.webp";
 import MainProjectCard from "./MainProjectCard";
 import "./FunProjects.css";
 

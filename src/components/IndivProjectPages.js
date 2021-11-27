@@ -32,9 +32,9 @@ export default function IndivProjectPages(props) {
               <p>{props.date}</p>
             </div>
             <div class="column">
-              <img src={props.src} />
-              <img src={props.src1} />
-              <img src={props.src2} />
+              <img src={props.src} alt={props.alt}/>
+              <img src={props.src1} alt={props.alt}/>
+              <img src={props.src2} alt={props.alt}/>
             </div>
           </div>
           {/* <div id="nextProject">

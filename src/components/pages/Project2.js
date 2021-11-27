@@ -19,6 +19,7 @@ export default function Project1() {
         stack="Shopify, HTML/CSS, Javsscript and Figma"
         role="Freelance Developer and Designer"
         date="May 2021"
+        alt="The Cosy Paws Project Description"
       />
     </>
   );

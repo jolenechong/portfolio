@@ -29,11 +29,13 @@ export default function Footer() {
                   className="fa fa-linkedin fa-lg"
                   href="https://www.linkedin.com/in/jolene-chong/"
                   target="_blank"
+                  rel="noreferrer"
                 ></a>
                 <a
                   className="fa fa-github fa-lg"
                   href="https://github.com/jolenechong"
-                  target="_blank"
+                  target="_blank" 
+                  rel="noreferrer"
                 ></a>
               </div>
               <div className="column">

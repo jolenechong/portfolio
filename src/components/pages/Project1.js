@@ -15,6 +15,7 @@ export default function Project1() {
         stack="EditorX, HTML/CSS, Javsscript and Figma"
         role="Freelance Developer and Designer"
         date="August 2021"
+        alt="Kamoga Site Description"
       />
     </>
   );
