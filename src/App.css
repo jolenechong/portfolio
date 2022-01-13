@@ -67,6 +67,7 @@ html {
   --color-text: black;
   --secondary-bg: pink;
   --secondary-border: purple;
+  --accent-color:#30c3cd;
 }
 
 html[data-theme="dark"] {
@@ -76,7 +77,7 @@ html[data-theme="dark"] {
   --secondary-border: #1f3758;
   --tab-border: white;
   --CTA-bg: #15253c;
-  --footer-bg: #1a1f26;
+  --footer-bg: #0F1A20;
   --secondary-color-text:grey
 }
 html[data-theme="light"] {
@@ -86,6 +87,6 @@ html[data-theme="light"] {
   --secondary-border: #d6d6d6;
   --tab-border: grey;
   --CTA-bg: #f1e9e5;
-  --footer-bg: #32353a;
+  --footer-bg: #0F1A20;
   --secondary-color-text:rgb(179, 179, 179);
 }

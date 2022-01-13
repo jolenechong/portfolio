@@ -12,6 +12,7 @@ export default function Footer() {
             <div className="row">
               <div className="column" id="txtcolumn">
                 <img src={Logo} width="100" alt=''></img>
+                <p id="CTA">Building websites that work for you.</p>
                 <p>
                   Currently open for freelance projects and open to work
                   opportunities. Have a fun project in mind? Or looking for a
@@ -38,21 +39,29 @@ export default function Footer() {
                   rel="noreferrer"
                 ></a>
               </div>
+
               <div className="column">
-                <h3>Experience</h3>
-                <a href="https://github.com/jolenechong/geekoutTravel">
-                  GeekOut 2021
-                </a>
-                <br />
-                <a href="https://github.com/jolenechong/lifehackEscapeRoom">
-                  LifeHack 2021
-                </a>
+              <form name="contact" method="POST">
+              <input type="hidden" name="form-name" value="contact"/>
+              <div hidden>
+                <input name='bot-field'/>
               </div>
-              <div className="column">
-                <h3>Quick Links</h3>
-                <Link to="#home">Home</Link>
-                <br />
-                <Link to="#projects">Projects</Link>
+
+              <div className='formQuestion'>
+                <input type="text" name='first-name' required />
+                <label htmlFor='first-name'>Name</label>
+              </div>
+              <div className='formQuestion'>
+                <input type="email" name='email' required />
+                <label htmlFor='email'>Email</label>
+              </div>
+              <div className='formQuestion'>
+                <textarea name='message' required />
+                <label htmlFor='message'>Your Message</label>
+              </div>
+
+              <button type="submit">Submit</button>
+            </form>
               </div>
             </div>
           </div>

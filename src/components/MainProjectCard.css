@@ -20,7 +20,7 @@
   height: 200px;
   position: absolute;
   top: 30px;
-  left: 350px;
+  left: 45%;
   transition: 400ms;
   border: 1px solid var(--secondary-border);
   width: 50%;

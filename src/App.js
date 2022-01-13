@@ -22,7 +22,6 @@ function App() {
           <Route path="/project2" component={Project2} />
           <Route path="/resume" component={Resume} />
         </Switch>
-        <CTASection />
         <Footer />
       </Router>
     </>

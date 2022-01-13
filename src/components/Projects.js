@@ -10,16 +10,12 @@ export default function Projects() {
     <>
       <section id="projects" style={{ paddingTop: "50px" }}>
         <h1>Web Development Projects</h1>
-        <p>Looking for freelance work? These are some of my freelance projects/best works in web dev.</p>
-        {/* <MainProjectCard
-          src={thecosypawsIMG}
-          title="PastaWorks"
-          stack="ReactJS"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis libero nisi."
-        /> */}
+        <p>Looking for freelance work? These are some of my freelance projects/best works in web dev. Click on{" "}
+          <i className="fas fa-globe"></i> to view the live sites and{" "}
+          <i className="fab fa-github"></i> to view the more details/source code on github.</p>
         <MainProjectCard
           src={NYPLIT}
-          // linkto="/project1"
+          linkto="/project1"
           title="NYP LIT Website"
           stack="HTML/CSS and Javascript"
           site="https://nyp-lit.github.io"
@@ -40,7 +36,7 @@ export default function Projects() {
           // linkto="https://github.com/jolenechong/ChatHealth"
           title="ChatHealth WebApp"
           linktoALT="https://github.com/jolenechong/ChatHealth#readme"
-          stack="NodeJS, VanilaJS, Bored API, Socket.io"
+          stack="NodeJS, Javascript, Bored API, Socket.io"
           site="https://chat-health.herokuapp.com/"
           code="https://github.com/jolenechong/ChatHealth"
           description="With ChatHealth we would be able to rant annonymously and get your mind off your struggles."

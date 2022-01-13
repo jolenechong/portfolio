@@ -13,20 +13,13 @@
   color: grey;
 }
 
-input[type="text"] {
+input[type='text'],input[type='email']{
   border: none;
   outline: 0;
   border-bottom: #30c3cd solid 2px;
   background-color: transparent;
   color: var(--color-text);
-}
-
-input[type="email"] {
-  border: none;
-  outline: 0;
-  border-bottom: #30c3cd solid 2px;
-  background-color: transparent;
-  color: var(--color-text);
+  transition: all 400ms;
 }
 
 textarea{
