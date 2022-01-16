@@ -65,7 +65,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <p id="footerTXT">© 2021 Jolene. All Rights Reserved.</p>
+          <p id="footerTXT">© 2022 Jolene. All Rights Reserved.</p>
         </div>
       </footer>
     </>
