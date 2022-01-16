@@ -1,7 +1,9 @@
 import "./FunProjectsCard.css";
+import { useState, useEffect } from "react";
 import LanguageColor from "./LanguageColor";
 
 const FunProjectsCard = (props) => {
+
   const colors = {
     JavaScript: "#efdf54",
     HTML: "#d94b23",
@@ -25,11 +27,12 @@ const FunProjectsCard = (props) => {
       </div>
 
       <div className="topics-div">
-        {props.topics.length > 0 ? (
-          props.topics.map((repoDetails) => <span>{repoDetails}</span>)
-        ) : (
-          <p></p>
-        )}
+        {/* <span>{props.topics}</span> */}
+      {/* {topics.map(topic => (
+        <span>{topic}<
+        
+        /span>
+      ))} */}
       </div>
 
       <p className="language">
