@@ -30,7 +30,7 @@ const FunProjects = () => {
             repo.map((repoDetails) => (
               <div className="cardRepo">
                 <h3>{repoDetails.name}</h3>
-                <p>{repoDetails.description}</p>
+                
                 <div className="icons-div">
                   {repoDetails.homepage && (
                     <a href={repoDetails.homepage} target="_blank">
@@ -51,6 +51,8 @@ const FunProjects = () => {
                     <p></p>
                   )}
                 </div>
+
+                <p>{repoDetails.description}</p>
 
                 <p className="language">
                   <LanguageColor

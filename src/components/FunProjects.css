@@ -76,7 +76,7 @@
   }
   
   .topics-div{
-    margin-top: 10px;
+    margin-bottom: 10px;
     /* bottom: 15px;
     left: 10px;
     display: flex;
@@ -87,11 +87,11 @@
   .topics-div span{
     font-size: 0.8rem;
     width: auto;
-    background-color: #9de9ee;
+    background-color: #9de9ee4a;
     border-radius: 20px;
     padding: 5px;
+    color: #30c3cd;
     margin-right: 5px;
     margin-bottom: 2px;
-    color: black;
     font-family: "Source Code Pro", monospace;
   }
