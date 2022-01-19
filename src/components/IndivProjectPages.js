@@ -4,46 +4,46 @@ export default function IndivProjectPages(props) {
   return (
     <>
       <section id="indivprojpages">
-        <header id="indivprojpagesbg">
+        {/* <header id="indivprojpagesbg">
           <h1 style={{ fontSize: "35px" }}>{props.title}</h1>
-        </header>
-        <main>
-          <div class="row">
+        </header> */}
+        <div className="container-indiv">
+        <div className="project-header">
+          <h1>{props.title}</h1>
+          <p>Technology Used: <span>{props.stack}</span></p>
+        </div>
+        <div class="row">
             <div class="column">
-              <h1>About Project</h1>
+              <h1>Scope</h1>
               <p>{props.description}</p>
-              <h1>Links</h1>
-              {props.site && (
-                <a href={props.site} target="_blank">
-                  Live Demo
-                </a>
-              )}
-              <br />
-              {props.code && (
-                <a href={props.code} target="_blank">
-                  Source Code
-                </a>
-              )}
-              <h1>Technology Used</h1>
-              <p>{props.stack}</p>
+              <br/>
+              <p>Feel free to view <a href={props.site} target="_blank">live site</a> and <a href={props.code} target="_blank">source code</a>.</p>
+
+              {/* <h1>Role</h1>
+              <p>{props.role}</p> */}
+              {/* <h1>Date</h1>
+              <p>{props.date}</p> */}
+            </div>
+            <div class="column">
               <h1>Role</h1>
               <p>{props.role}</p>
               <h1>Date</h1>
               <p>{props.date}</p>
             </div>
-            <div class="column">
+
+          </div>
+          <br/>
               <img src={props.src} alt={props.alt}/>
               <img src={props.src1} alt={props.alt}/>
               <img src={props.src2} alt={props.alt}/>
-            </div>
-          </div>
+              <br/><br/>
+        </div>
           {/* <div id="nextProject">
             <div>
               <p>Next Section</p>
               <h1>The Cosy Paws</h1>
             </div>
           </div> */}
-        </main>
       </section>
     </>
   );
