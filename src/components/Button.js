@@ -25,12 +25,4 @@ export const Button = ({
             </button>
         </Link>
     )
-};
-
-// export default function Button() {
-//     return (
-//         <div>
-
-//         </div>
-//     )
-// }
+}

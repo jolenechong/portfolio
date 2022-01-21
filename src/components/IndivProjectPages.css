@@ -1,7 +1,9 @@
-
 #indivprojpages .row {
   display: flex;
   margin: auto;
+  display: flex;
+  margin: auto;
+  padding-bottom: 75px;
 }
 
 #indivprojpages .column {
@@ -35,28 +37,25 @@
   text-decoration: underline;
 }
 
-.container-indiv{
+.container-indiv {
+  padding-top: 40px;
   max-width: 1000px;
   margin: auto;
   color: var(--color-text);
-
 }
 
-.project-header{
-  padding: 10px;
+.project-header {
+  padding: 10px 10px 50px 10px;
 }
-.project-header h1{
+.project-header h1 {
   font-size: 2.2rem;
 }
-.project-header p span{
-  font-size: 0.9rem;
-  width: auto;
-  background-color: #9de9ee4a;
-  border-radius: 20px;
-  padding: 5px;
-  color: var(--color-text);
-  /* color: #30c3cd; */
-  margin-right: 5px;
-  margin-bottom: 2px;
-  font-family: "Source Code Pro", monospace;
+.project-header p span {
+  color: var(--accent-color);
+}
+#project-outcome{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 35vh;
+  height: 100%;
 }

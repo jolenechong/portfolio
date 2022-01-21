@@ -15,10 +15,10 @@ export default function HeroSection() {
         <span className="categories">.html/css</span>
         <span className="categories">.javascript </span>
         <span className="categories">.reactJS </span>
-        <span className="categories">.webdesign </span>
-        
-
         <span className="categories">.python </span>
+
+        <span className="categories">.webdesign </span>
+        {/* <span className="categories">.python </span> */}
         <span className="categories">.webflow </span>
         <span className="categories">.editorX </span>
         <span className="categories">.shopify </span>

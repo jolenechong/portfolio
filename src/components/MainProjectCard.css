@@ -4,14 +4,13 @@
 
 #mainProjects .card {
   display: flex;
-  /* max-width: 1000px; */
   position: relative;
-  /* border: 1px solid black; */
   width: 90%;
   max-width: 1000px;
   margin: auto;
   flex-direction: row;
 }
+
 #mainProjects .cardText {
   flex: 50%;
   background-color: var(--secondary-bg);
@@ -28,17 +27,25 @@
   padding-top: 30px;
   color: var(--color-text);
 }
+
 #mainProjects .cardImg {
   flex: 50%;
 }
+
 #mainProjects .cardText:hover {
   transform: scale(1.02);
 }
+
 #mainProjects .cardImg img {
   width: 50%;
   transform: rotate(2deg);
   border-radius: 10px;
 }
+
+#projects > h1{
+  color:var(--color-text);
+}
+
 @media only screen and (max-width: 801px) {
   #mainProjects .card {
     flex-direction: column;
@@ -59,6 +66,7 @@
   }
 }
 
+/* main projects card text */
 .cardText .stack {
   color: #30c3cd;
 }
@@ -76,7 +84,4 @@
 }
 .cardText .stack {
   color: #30c3cd;
-}
-#projects > h1{
-  color:var(--color-text);
 }

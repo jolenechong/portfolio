@@ -33,7 +33,6 @@ export default function Projects() {
         />
         <MainProjectCard
           src={ChatHealth}
-          // linkto="https://github.com/jolenechong/ChatHealth"
           title="ChatHealth WebApp"
           linktoALT="https://github.com/jolenechong/ChatHealth#readme"
           stack="NodeJS, Javascript, Bored API, Socket.io"
@@ -41,15 +40,6 @@ export default function Projects() {
           code="https://github.com/jolenechong/ChatHealth"
           description="With ChatHealth we would be able to rant annonymously and get your mind off your struggles."
         />
-        {/* <MainProjectCard
-          src="https://i.ibb.co/0h3mqy1/Screenshot-2021-09-02-113229.png"
-          // linkto=""
-          title="Full-stack Movie App"
-          stack="ReactJS, NodeJS, TMDB API"
-          // site="https://thecosypaws.com.sg/"
-          // code=""
-          description="[UNDER WORKS] Keep track of the movies you watched and the ones you like."
-        /> */}
       </section>
     </>
   );
