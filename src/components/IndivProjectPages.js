@@ -1,6 +1,20 @@
 import "./IndivProjectPages.css";
 
 export default function IndivProjectPages(props) {
+  const text = props.scope
+  const scope = text.split('>>>')
+
+  const txt = props.outcome
+  const outcome = txt.split('>>>')
+
+  // console.log(scope)
+
+  // for(var i=0;i<scope.length;i++){
+  //   console.log(scope[i],'yes')
+  // }
+  
+  // return newText
+
   return (
     <>
       <section id="indivprojpages">
@@ -12,8 +26,10 @@ export default function IndivProjectPages(props) {
         <div class="row">
             <div class="column">
               <h1>Scope</h1>
-              <p>{props.scope}</p>
-              <br/>
+              {/* <p>{scope}</p> */}
+              {scope.map(item => {
+          return <><p>{item}</p><br/></>;
+        })}
               <p>Feel free to view <a href={props.site} target="_blank">live site</a> and <a href={props.code} target="_blank">source code</a>.</p>
             </div>
             <div className="column">
@@ -32,7 +48,9 @@ export default function IndivProjectPages(props) {
             </div>
             <div className="column" id="project-outcome">
             <h1>Outcome</h1>
-            <p>{props.outcome}</p>
+            {outcome.map(item => {
+          return <><p>{item}</p><br/></>;
+        })}
             </div>
           </div>
         </div>

@@ -10,13 +10,20 @@ export default function Project1() {
     <>
       <Page
         title="NYP LIT Website"
-        scope="A simple landing page website for a NYP LIT. Designed on Figma and built
-        with custom HTML/CSS and Javascript to display current and past events. "
+        scope="NYP LIT is a Special Interest Group from NYP aiming to promote Information Technology skills to more
+        female students, through hosting workshops, webinars and talks.>>>
+
+        To achieve that, we needed a place to showcase the current and past events we hold in order to let people get
+        a better feel of what we're here for and what we do. "
         src={NYPLIT_img1}
         src1={NYPLIT_img2}
         src2={NYPLIT_img3}
-        outcome="With a clean look and feel to the website, users are able to easily
-         filter through current and past events along with social links."
+        outcome="Based on the goal of NYP LIT, I build a design system along with a logo, then i designed the 
+        landing page website on Figma taking into consideration user experience and easy navigation. Then, I built it 
+        with HTML/CSS and Javascript. >>>
+
+        With a clean look and feel to the website, users are able to filter easily through current and past events and also
+         understand what NYP LIT is about."
         site="https://nyp-lit.github.io"
         code="https://github.com/nyp-lit/nyp-lit.github.io"
         stack="HTML/CSS, Javascript and Figma"

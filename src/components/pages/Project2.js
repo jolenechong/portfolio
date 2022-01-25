@@ -10,8 +10,11 @@ export default function Project1() {
     <>
       <Page
         title="The Cosy Paws"
-        scope="A 5 page website built on Shopify for a client, with custom pages.
-        Teams Page and Links Page were designed on Figma and built with custom code."
+        scope="The Cosy Paws is a ECommerce B2C business targeting pet owners. Since the target audience
+        is people with pets, the site is designed to fit that.>>>
+
+        They mainly sell 2 categories of products hence we decided to put them on the home page, along with a
+        teams page and many photos to capture the users attention and stand out from other sites."
         outcome="Categories on home page make it easier for users to navigate around the site. Teams page was made to be fun and inviting for potential customers to feel more connected to the brand."
         src={thecosypawsIMG1}
         src1={thecosypawsIMG3}
