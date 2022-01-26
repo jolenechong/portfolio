@@ -39,7 +39,7 @@
 
 .container-indiv {
   padding-top: 40px;
-  max-width: 1000px;
+  max-width: 90%;
   margin: auto;
   color: var(--color-text);
 }
@@ -58,4 +58,11 @@
   position: sticky;
   top: 35vh;
   height: 100%;
+}
+
+#indivprojpages .column:nth-child(1){
+  flex: 60% 1;
+}
+#indivprojpages .column:nth-child(2){
+  flex: 40% 1;
 }
