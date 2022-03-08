@@ -1,29 +1,20 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import { HashRouter } from "react-router-dom";
-import Home from "./components/pages/Home";
-import Cursor from "./components/Cursor";
-import Footer from "./components/Footer";
-import Project1 from "./components/pages/Project1";
-import Project2 from "./components/pages/Project2";
-import Resume from "./components/pages/Resume";
+import "./App.scss";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from './pages/home/index.';
+import Navbar from './components/navbar'
+import Footer from './components/footer'
 
 function App() {
   return (
     <>
-      <Router>
-        <Navbar />
-        <Cursor />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/project1" component={Project1} />
-          <Route path="/project2" component={Project2} />
-          <Route path="/resume" component={Resume} />
-        </Switch>
-        <Footer />
-      </Router>
-    </>
+    <Router>
+      <Navbar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      <Footer/>
+    </Router>
+      </>
   );
 }
 
