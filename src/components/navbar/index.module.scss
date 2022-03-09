@@ -48,7 +48,6 @@ nav {
 
     @media screen and (max-width: 961px) {
       .menu {
-        display: flex;
         flex-direction: column;
         height: 95vh;
         position: fixed;
@@ -56,11 +55,13 @@ nav {
         right: -100%;
         height: 100vh;
         transition: all 0.5s ease;
+        justify-content: center;
 
         li {
           height: 80px;
         }
       }
+
       ul.active {
         display: flex;
         box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
@@ -93,7 +94,13 @@ nav {
       list-style: none;
       text-align: center;
       width: 60vw;
-      justify-content: center;
+      justify-content: flex-end;
+
+      @media screen and (max-width: 961px) {
+        &{
+          justify-content: center;
+        }
+      }
 
       .links {
         height: 80px;
@@ -138,31 +145,6 @@ nav {
 
     p {
       font-size: 10px;
-    }
-
-    .menu {
-      display: flex;
-      flex-direction: column;
-      height: 95vh;
-      position: fixed;
-      top: 0;
-      left: -100%;
-      height: 100vh;
-      transition: all 0.5s ease;
-    }
-
-    .menu.active {
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      border-radius: 0 10px 10px 0;
-      border-right: 1px solid rgba(255, 255, 255, 0.18);
-      font-size: 1rem;
-      background: var(--bg);
-      left: 0;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
     }
   }
 }
