@@ -23,6 +23,7 @@ export default function Footer() {
                 className="fa fa-envelope fa-lg"
                 mailto="mailto:jolenechong7@gmail.com"
                 href="/#"
+                aria-label="Email"
               >
                 {" "}
               </a>
@@ -32,6 +33,7 @@ export default function Footer() {
                 href="https://www.linkedin.com/in/jolene-chong/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="LinkedIn"
               >
                 {" "}
               </a>
@@ -40,6 +42,7 @@ export default function Footer() {
                 href="https://github.com/jolenechong"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Github"
               >
                 {" "}
               </a>

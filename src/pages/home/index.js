@@ -5,8 +5,8 @@ import ProjectBox from "../../components/home/projects";
 import ArchiveProjectBox from '../../components/home/archiveprojects'
 import styles from "./index.module.scss";
 import ChatHealthIMG from "../../images/ChatHealth.webp";
-import AnalysisIMG from "../../images/AnalysisOnHousing.png";
-import FullstackForumIMG from "../../images/FullstackForum.png";
+import AnalysisIMG from "../../images/AnalysisOnHousing.webp";
+import FullstackForumIMG from "../../images/FullstackForum.webp";
 
 export default function Home() {
   const tech = [
