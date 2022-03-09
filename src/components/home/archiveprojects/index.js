@@ -16,11 +16,11 @@ export default function archiveprojects({ props }) {
 
       <div className={styles.iconsdiv}>
         {props.homepage && (
-          <a href={props.homepage} target="_blank" rel="noreferrer">
+          <a href={props.homepage} target="_blank" rel="noreferrer" aria-label="Link to Live Site">
             <i className="fas fa-globe"></i>
           </a>
         )}
-        <a href={props.html_url} target="_blank" rel="noreferrer">
+        <a href={props.html_url} target="_blank" rel="noreferrer" aria-label="Link to Source Code">
           <i className="fab fa-github"></i>
         </a>
       </div>

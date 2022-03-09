@@ -100,7 +100,7 @@ function Navbar() {
           <a
             className="fa fa-envelope fa-lg"
             href="mailto:jolenechong7@gmail.com"
-            aria-hidden="true"
+            aria-label="Email"
           >
             {" "}
           </a>
@@ -110,7 +110,7 @@ function Navbar() {
             href="https://www.linkedin.com/in/jolene-chong/"
             target="_blank"
             rel="noreferrer"
-            aria-hidden="true"
+            aria-label="LinkedIn"
           >
             {" "}
           </a>
@@ -119,7 +119,7 @@ function Navbar() {
             href="https://github.com/jolenechong"
             target="_blank"
             rel="noreferrer"
-            aria-hidden="true"
+            aria-label="Github"
           >
             {" "}
           </a>
