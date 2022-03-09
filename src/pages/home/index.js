@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <section id={styles.intro}>
+      <section id='intro' className={styles.intro}>
         <h1>HELLO</h1>
         <p>
           I'm jolene, I <span className={styles.highlight}>design</span> and{" "}
@@ -43,12 +43,12 @@ export default function Home() {
         </p>
         <div className={styles.techstack}>
           {tech.map((tec, i) => (
-            <TechTag tech={tec} />
+            <TechTag key={i} tech={tec} />
           ))}
         </div>
       </section>
 
-      <section>
+      <section id="projects">
         <h2>Projects</h2>
         <ProjectBox
           image={ChatHealthIMG}
@@ -79,12 +79,12 @@ export default function Home() {
         />
       </section>
 
-      <section>
+      <section id="archive">
         <h2>Other Noteworthy Mentions</h2>
         <div className={styles.archiveproj}>
         {repository.length > 0 ? (
-            repository.map((repoDetails) => (
-              <ArchiveProjectBox props={repoDetails}/>
+            repository.map((repoDetails,i) => (
+              <ArchiveProjectBox key={i} props={repoDetails}/>
             ))
           ) : (
           <p>LOADING...</p>

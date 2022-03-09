@@ -6,10 +6,15 @@ import { HashLink as Hash } from "react-router-hash-link";
 
 function Navbar() {
   const [click, setClick] = useState(false);
+  // const [button, setButton] = useState(true);
   const [themeClick, setThemeClick] = useState(false);
   const [theme, setTheme] = useState(true);
 
-  const handleClick = () => setClick(!click);
+  const handleClick = () => {
+    const container = document.querySelector(`.${styles.container} ul`);
+    container.classList.toggle(styles.active);
+    click ? setClick(false) : setClick(true);
+  };
   const closeMobileMenu = () => setClick(false);
 
   // set theme by local storage
@@ -64,7 +69,7 @@ function Navbar() {
           >
             <li>
               <Hash
-                to="/#home"
+                to="/#intro"
                 className={styles.links}
                 onClick={closeMobileMenu}
               >
@@ -82,11 +87,11 @@ function Navbar() {
             </li>
             <li>
               <Hash
-                to="/#funProjects"
+                to="/#archive"
                 className={styles.links}
                 onClick={closeMobileMenu}
               >
-                Side Projects
+                Archive Projects
               </Hash>
             </li>
             <li></li>

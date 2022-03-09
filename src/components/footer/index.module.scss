@@ -1,7 +1,7 @@
 footer {
   background-color: var(--footer-bg);
   padding: 100px;
-  color: var(--color-text);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,6 +15,7 @@ footer {
 
     .row{
         .column:nth-child(1){
+            padding: 10px;
             width: 50%;
             float: left;
 
@@ -44,7 +45,6 @@ footer {
 
             form{
                 margin: auto;
-                max-width: 400px;
 
                 .formQuestion {
                     position: relative;

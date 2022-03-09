@@ -30,13 +30,9 @@ html {
   scroll-behavior: smooth;
 }
 
-/* :root {
-  --bg: yellow;
-  --color-text: black;
-  --secondary-bg: pink;
-  --secondary-border: purple;
+:root {
   --accent-color:#30c3cd;
-} */
+}
 
 html[data-theme="dark"] {
   --bg: #1a1f26;

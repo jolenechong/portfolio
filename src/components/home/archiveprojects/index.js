@@ -27,7 +27,7 @@ export default function archiveprojects({ props }) {
 
       <div className={styles.topicsdiv}>
         {props.topics.length > 0 ? (
-          props.topics.map((topic) => <span>{topic}</span>)
+          props.topics.map((topic,i) => <span key={i}>{topic}</span>)
         ) : (
           <p></p>
         )}

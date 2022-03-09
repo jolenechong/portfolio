@@ -13,20 +13,13 @@ nav {
   z-index: 999;
   transition: top 0.3s;
 
-//   .themetoggle {
-//     position: absolute;
-//     top: 16px;
-//     right: 15px;
-//     /* padding: 10px; */
-//   }
-
-.themetoggle i {
-  font-size: 1.6rem;
-  cursor: pointer;
-  color: #30c3cd;
-  transition: 400ms;
-  padding: 10px 15px;
-}
+  .themetoggle i {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #30c3cd;
+    transition: 400ms;
+    padding: 10px 15px;
+  }
 
   .socials {
     position: absolute;
@@ -53,6 +46,37 @@ nav {
     height: 65px;
     max-width: 1500px;
 
+    @media screen and (max-width: 961px) {
+      .menu {
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        transition: all 0.5s ease;
+
+        li {
+          height: 80px;
+        }
+      }
+      ul.active {
+        display: flex;
+        box-shadow: 0 8px 32px 0 rgb(31 38 135 / 37%);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        border-radius: 0 10px 10px 0;
+        border-right: 1px solid rgba(255, 255, 255, 0.18);
+        font-size: 1rem;
+        background: var(--bg);
+        right: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+    }
+
     .logo {
       color: black;
       justify-self: start;
@@ -65,49 +89,41 @@ nav {
     }
 
     .menu {
-      display: grid;
-      grid-template-columns: repeat(4, auto);
-      grid-gap: 10px;
+      display: flex;
       list-style: none;
       text-align: center;
       width: 60vw;
-      justify-content: end;
-    //   margin-right: 2rem;
+      justify-content: flex-end;
 
-      .links{
-          height: 80px;
-          text-decoration: none;
-          color: var(--color-text);
-          padding: 0 10px 0 10px;
+      .links {
+        height: 80px;
+        text-decoration: none;
+        color: var(--color-text);
+        padding: 0 10px 0 10px;
       }
     }
   }
 }
 
 @media screen and (max-width: 961px) {
-    
   .socials {
     position: absolute;
     top: 25px;
   }
-  .links{
-      display: none;
-  }
+
   .themetoggle {
     position: absolute;
     top: 16px;
     right: 15px;
-    /* padding: 10px; */
   }
   .logo {
     position: absolute;
-    top: 20px;
-    left: 10px;
+    top: 16px;
+    left: 5px;
   }
   .icon {
     display: block;
     position: fixed;
-    /* top: 70vh; */
     bottom: 20vh;
     right: 0;
     transform: translate(-100%, 60%);
@@ -133,10 +149,6 @@ nav {
       left: -100%;
       height: 100vh;
       transition: all 0.5s ease;
-
-    //   .links {
-    //     height: 80px;
-    //   }
     }
 
     .menu.active {
