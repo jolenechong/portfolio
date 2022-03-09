@@ -94,7 +94,6 @@ function Navbar() {
                 Archive Projects
               </Hash>
             </li>
-            <li></li>
           </ul>
         </div>
         <div className={styles.socials}>

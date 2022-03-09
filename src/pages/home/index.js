@@ -72,7 +72,7 @@ export default function Home() {
           image={AnalysisIMG}
           title="Housing Price Analysis"
           stack="Python, PowerBI"
-          description="PowerBI dashboard, Web scraping and Python Scripts to clean data and analyse what influences Housing Prices."
+          description="PowerBI dashboard, Web scraping and Python Scripts to clean data any analyse data."
           site="https://vimeo.com/678118497"
           code="https://github.com/jolenechong/SingaporeHousingPriceAnalysis"
           linkto="https://github.com/jolenechong/SingaporeHousingPriceAnalysis#readme"
