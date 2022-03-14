@@ -1,4 +1,7 @@
 import styles from "./index.module.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Projects = ({image,title,stack,description,site,code,linkto}) => {
   return (
@@ -12,12 +15,12 @@ const Projects = ({image,title,stack,description,site,code,linkto}) => {
             <p className={styles.description}>{description}</p>
             {site && (
               <a href={site} target="_blank" rel='noreferrer' aria-label="Link to Live Site">
-                <i className="fas fa-globe"></i>
+                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icons} />
               </a>
             )}
             {code && (
               <a href={code} target="_blank" rel='noreferrer' aria-label="Link to code">
-                <i className="fab fa-github"></i>
+                <FontAwesomeIcon icon={faGithub} className={styles.icons}/>
               </a>
             )}
             {linkto && <a

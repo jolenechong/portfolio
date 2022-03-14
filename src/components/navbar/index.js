@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import styles from "./index.module.scss";
 import logo from "../../images/JOLENE.png";
 import { HashLink as Hash } from "react-router-hash-link";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faXmark,faBars } from '@fortawesome/free-solid-svg-icons'
+import { faSun,faMoon } from '@fortawesome/free-regular-svg-icons'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -52,11 +55,8 @@ function Navbar() {
   return (
     <>
       <div className={styles.icon} onClick={handleClick}>
-        <i
-          className={click ? "fas fa-times" : "fas fa-bars"}
-          style={{ color: "grey" }}
-        />
-        <p style={{ color: "grey" }}>Menu</p>
+        <FontAwesomeIcon icon={click ? faXmark : faBars } color='#b3b3b3'/>
+        <p style={{ color: "#b3b3b3" }}>Menu</p>
       </div>
       <nav>
         <div className={styles.container}>
@@ -125,7 +125,7 @@ function Navbar() {
           </a>
         </div>
         <div className={styles.themetoggle} onClick={themeToggle}>
-          <i className={themeClick ? "far fa-sun" : "far fa-moon"} />
+          <FontAwesomeIcon icon={themeClick ? faSun : faMoon} color='#30c3cd' style={{fontSize:'1.6rem', marginTop:'10px'}}/>
         </div>
       </nav>
     </>

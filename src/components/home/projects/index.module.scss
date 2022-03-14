@@ -45,6 +45,14 @@
     .stack,
     a {
       color: #30c3cd;
+
+      .icons{
+        background-color: var(--link-bg);
+        border-radius: 50px;
+        padding:5px;
+        margin-right: 5px;
+        margin-top: 5px;
+      }
     }
 
     .description {
