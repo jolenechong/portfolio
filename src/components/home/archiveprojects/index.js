@@ -2,7 +2,7 @@ import "../../../App.scss";
 import styles from "./index.module.scss";
 import LanguageColor from "../languagecolor";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 export default function archiveprojects({ props }) {
@@ -22,7 +22,7 @@ export default function archiveprojects({ props }) {
       <div className={styles.iconsdiv}>
         {props.homepage && (
           <a href={props.homepage} target="_blank" rel="noreferrer" aria-label="Link to Live Site">
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icons} />
+                <FontAwesomeIcon icon={faExternalLink} className={styles.icons} />
           </a>
         )}
         <a href={props.html_url} target="_blank" rel="noreferrer" aria-label="Link to Source Code">
