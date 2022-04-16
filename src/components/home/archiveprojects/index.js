@@ -11,6 +11,8 @@ export default function archiveprojects({ props }) {
     HTML: "#d94b23",
     Python: "#3f73a6",
     "Jupyter Notebook": "#d15a00",
+    Kotlin:'#a97bff',
+    Swift: '#ff7b91'
   };
 
   return (

@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import { faExternalLink, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Projects = ({image,title,stack,description,site,code,linkto}) => {
@@ -13,9 +13,11 @@ const Projects = ({image,title,stack,description,site,code,linkto}) => {
             <h2>{title}</h2>
             <p className={styles.stack}>{stack}</p>
             <p className={styles.description}>{description}</p>
+            <div style={{display:'flex', alignItems:'center'}}>
             {site && (
               <a href={site} target="_blank" rel='noreferrer' aria-label="Link to Live Site">
-                <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icons} />
+                <FontAwesomeIcon icon={faExternalLink} className={styles.icons}  />
+                {/* <FontAwesomeIcon icon={faArrowUpRightFromSquare} className={styles.icons} /> */}
               </a>
             )}
             {code && (
@@ -32,6 +34,8 @@ const Projects = ({image,title,stack,description,site,code,linkto}) => {
             >
               Project Details
             </a>}
+
+            </div>
           </div>
         </div>
   );
