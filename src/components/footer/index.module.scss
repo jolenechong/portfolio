@@ -1,0 +1,165 @@
+footer {
+  background-color: var(--footer-bg);
+  padding: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .row{
+        .column:nth-child(1){
+            padding: 10px;
+            width: 50%;
+            float: left;
+
+            .socials {
+            
+                a {
+                  text-decoration: none;
+                  padding: 5px;
+                  color: grey;
+                }
+            
+                a:hover {
+                  text-decoration: none;
+                  padding: 5px;
+                  color: #30c3cd;
+                  transition: 500ms;
+                }
+            }
+
+            .CTA{
+                color: #30c3cd;
+            }
+        }
+        .column:nth-child(2){
+            width: 50%;
+            float: right;
+
+            form{
+                margin: auto;
+
+                .formQuestion {
+                    position: relative;
+                    padding: 10px;
+                    padding-top: 20px;
+                    transition: all 400ms;
+                  }
+
+                input[type='text'],input[type='email']{
+                    border: none;
+                    outline: 0;
+                    border-bottom: #30c3cd solid 2px;
+                    background-color: transparent;
+                    color: white;
+                    width: 100%;
+                  }
+                  
+                  textarea{
+                    border: none;
+                    outline: 0;
+                    color: white;
+                    border-bottom: #30c3cd solid 2px;
+                    background-color: transparent;
+                    width: 100%;
+                    resize: vertical;
+                  }
+                  label {
+                    position: absolute;
+                    top: 20px;
+                    left: 10px;
+                    pointer-events: none;
+                    font-size: 0.8rem;
+                    color:#d3d3d3;
+                    -webkit-touch-callout: none; /* iOS Safari */
+                    -webkit-user-select: none; /* Safari */
+                     -khtml-user-select: none; /* Konqueror HTML */
+                       -moz-user-select: none; /* Old versions of Firefox */
+                        -ms-user-select: none; /* Internet Explorer/Edge */
+                            user-select: none; /* Non-prefixed version, currently
+                                                  supported by Chrome, Edge, Opera and Firefox */
+                  }
+                  
+                  input[type="text"]:focus,
+                  input[type="email"]:focus,
+                  textarea:focus {
+                    border-bottom: #30c3cd solid 2px;
+                    outline: 0;
+                    transition: all 400ms;
+                  }
+                  
+                  /* input something */
+                  input[type="text"]:invalid,
+                  input[type="email"]:invalid,
+                  textarea:invalid {
+                    border-bottom: #d3d3d3 solid 2px;
+                    outline: 0;
+                  }
+                  
+                  input[type="text"]:valid ~ label,
+                  input[type="email"]:valid ~ label,
+                  textarea:valid ~ label {
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    color: #30c3cd;
+                  }
+                  /* end of input */
+                  
+                  /* move label up and change its color on focus */
+                  input[type="text"]:focus ~ label,
+                  input[type="email"]:focus ~ label,
+                  textarea:focus ~ label {
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    color: #30c3cd;
+                  }
+                  
+                  input[type="text"]:focus,
+                  input[type="email"]:focus,
+                  textarea:focus {
+                    border-bottom: #30c3cd solid 2px;
+                  }
+                  /* end */
+                  
+                  button[type='submit']{
+                    border: 0;
+                    /* border: #30c3cd solid 1px; */
+                    outline: none;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin: 5px 10px 10px 10px;
+                    display: block;
+                    background-color: #30c3cd;
+                  }
+            }
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 960px) {
+  footer{
+    & > div{
+      .row{
+        .column:nth-child(1),
+        .column:nth-child(2) {
+          width: 100%;
+        }
+      }
+    }
+  } 
+  footer {
+    padding: 10px;
+    padding-top: 125px;
+    padding-bottom: 75px;
+  }
+}
