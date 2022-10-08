@@ -6,7 +6,7 @@ export default function Nav() {
 
     return (
         <>
-        <nav className='fixed top-4 right-4'>
+        <nav className='fixed top-4 right-4 z-10'>
             <a
                 href='mailto:jolenechong7@gail.com'
                 target="_blank"

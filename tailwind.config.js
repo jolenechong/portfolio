@@ -25,7 +25,8 @@ module.exports = {
           primaryBG: 'var(--bg-color)',
           textPrimary: 'var(--txt-color)',
           textSecondary: 'var(--txt-color-secondary)',
-          danger: '#ec4747'
+          danger: '#ec4747',
+          gradientRed: "#da20322f"
         },
         fontFamily: {
           'montserrat': ['Montserrat'],

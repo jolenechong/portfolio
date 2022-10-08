@@ -19,13 +19,13 @@ export default function Home() {
       "techStack": ["Typescript ReactJS", "NodeJS", "MongoDB", "TailwindCSS", "SCSS"],
       "desc" : "A Real Time Multi-Player game built with WebSockets where users collaborate to solve a crossword puzzle.",
       "previewLink": "https://wordconnect.onrender.com/",
-      "sourceLink": "https://wordconnect.onrender.com/play/",
+      "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/WordConnect/README.md",
       "thumbnail": "WordConnect.webp"
     },
     "Am I Write?" : {
       "techStack": ["Kotlin", "Android Studio", "TensorflowLite"],
       "desc" : "Mobile Application with AI  to help identify early stages in youths at risk. In partnership with Society Against Family Violence.",
-      "previewLink": "https://google.com",
+      "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/AmIWrite/README.md",
       "thumbnail": "AmIWrite.webp"
     },
     "ChatHealth WebApp": {
@@ -53,7 +53,7 @@ export default function Home() {
     <>
     <IntroSection techStackList={techStackList}/>
 
-    <section className="bg-gradient-to-tl to-primaryBG via-[#990C192F] from-primaryBG">
+    <section className="bg-gradient-to-tl to-primaryBG via-gradientRed from-primaryBG">
       <div className="max-w-[1000px] m-auto">
         <h1 className="text-center text-2xl py-8">Projects</h1>
         <div>
@@ -70,10 +70,10 @@ export default function Home() {
       </div>
     </section>
 
-    <section className="bg-gradient-to-tr to-primaryBG via-[#990C192F] from-primaryBG">
+    <section className="bg-gradient-to-tr to-primaryBG via-gradientRed from-primaryBG">
       <div className="max-w-[1000px] m-auto py-20">
         <h1 className="text-center text-2xl py-8">Other Noteworthy Projects</h1>
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap justify-center">
           {
             repositories.map((repo, index) => 
               <div data-aos="fade-up">

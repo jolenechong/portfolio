@@ -8,7 +8,7 @@ export default function IntroSection({techStackList}: IProps) {
 
     return (
         <>
-            <section className="bg-gradient-to-tr to-primaryBG via-[#990C192F] from-primaryBG">
+            <section className="bg-gradient-to-tr to-primaryBG via-gradientRed from-primaryBG">
             <div className="flex h-screen flex-col max-w-[500px] justify-center items-center m-auto">
                 <h1 className="text-4xl font-semibold">Hi, I’m <span className="text-primary">Jolene</span></h1>
                 <p className="text-center">I design and build user interfaces. Based in Singapore, 

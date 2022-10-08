@@ -6,7 +6,7 @@ interface Props {
     text: String
     onClick?: React.MouseEventHandler<HTMLButtonElement> | undefined
     onLink?: string | undefined;
-    type?: string;
+    type: string;
 }
 
 export default function Button({ text, onClick, onLink, type }: Props) {
@@ -15,22 +15,22 @@ export default function Button({ text, onClick, onLink, type }: Props) {
         <>
             {type !== 'submit' ?
                 <a
-                    className={`inline-block ${type !== 'source' && "bg-gradient-to-r from-cyan-500 to-blue-500"} text-white 
-            no-underline rounded-lg px-8 py-2 my-2 font-semibold`}
+                    className={`inline-block ${type.slice(0,6) !== "source" && "bg-gradient-to-r from-cyan-500 to-blue-500"} text-white 
+            no-underline rounded-lg py-2 my-2 ${type !== 'sourceOnly' && "px-8 "} font-semibold`}
                     href={onLink}
                     target="_blank"
                     rel="noreferrer"
                 >
                     {
-                        type === "preview" ?
-                            <FontAwesomeIcon icon={faGlobe} className="pr-2" size='lg' />
-                            : type === "source" && <FontAwesomeIcon icon={faGithub} className="pr-2" size='lg' />
+                        type === "preview" ? <FontAwesomeIcon icon={faGlobe} className="pr-2" size='lg' />
+                        : (type === "source" || type ==="sourceOnly") && <FontAwesomeIcon icon={faGithub} className="pr-2" size='lg' />
                     }
                     {text}</a>
                 : <button
                     type='submit'
                     className={`inline-block bg-gradient-to-r from-cyan-500 to-blue-500 text-white 
-                no-underline rounded-lg px-8 py-2 my-2 font-semibold`} >{text}</button>}
+                no-underline rounded-lg px-8 py-2 my-2 font-semibold`}>{text}</button>
+            }
         </>
     );
 }

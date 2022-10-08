@@ -34,7 +34,9 @@ export default function ProjectBox({name, details}: Project) {
                     <p className="text-sm text-gray-500 pt-2">*There may be long load times for servers to start up</p>
                     <Button type="preview" text="Preview" onLink={details.previewLink}/>
                 </>}
-                {details.sourceLink && <Button type="source" text="Source" onLink={details.sourceLink}/>}
+                {details.sourceLink && details.previewLink ?
+                    <Button type="source" text="Source" onLink={details.sourceLink}/>
+                : <Button type="sourceOnly" text="Source" onLink={details.sourceLink}/>}
             </div>
         </div>
 
