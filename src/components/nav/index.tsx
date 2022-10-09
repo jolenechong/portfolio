@@ -8,7 +8,7 @@ export default function Nav() {
         <>
         <nav className='fixed top-4 right-4 z-10'>
             <a
-                href='mailto:jolenechong7@gail.com'
+                href='mailto:jolenechong7@gmail.com'
                 target="_blank"
                 rel="noreferrer">
                 <FontAwesomeIcon icon={faEnvelope} className="pr-3 text-textPrimary hover:text-primary duration-200" size='xl'/>

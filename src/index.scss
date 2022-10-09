@@ -47,10 +47,31 @@
 }
 
 body{
-    margin: 0;
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bg-color);
-    color: var(--txt-color)
+    color: var(--txt-color);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: overlay;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #80808029;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+::selection {
+  background-color: black;
+  color: var(--accent-color);
 }

@@ -2,6 +2,9 @@ import styles from "./index.module.scss";
 //@ts-ignore
 import Logo from "../../assets/logo.png";
 import Button from "../button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -20,32 +23,24 @@ export default function Footer() {
             <br></br>
 
             <div className={styles.socials}>
-              <a
-                className="fa fa-envelope fa-lg"
-                href="mailto:jolenechong7@gmail.com"
-                aria-label="Email"
-              >
-                {" "}
-              </a>
-
-              <a
-                className="fa fa-linkedin fa-lg"
-                href="https://www.linkedin.com/in/jolene-chong/"
+            <a
+                href='mailto:jolenechong7@gmail.com'
                 target="_blank"
-                rel="noreferrer"
-                aria-label="LinkedIn"
-              >
-                {" "}
-              </a>
-              <a
-                className="fa fa-github fa-lg"
-                href="https://github.com/jolenechong"
+                rel="noreferrer">
+                <FontAwesomeIcon icon={faEnvelope} className="pr-3 text-textPrimary hover:text-primary duration-200" size='xl'/>
+            </a>
+            <a
+                href='https://linkedin.com/in/jolene-chong'
                 target="_blank"
-                rel="noreferrer"
-                aria-label="Github"
-              >
-                {" "}
-              </a>
+                rel="noreferrer">
+                <FontAwesomeIcon icon={faLinkedin} className="pr-3 text-textPrimary hover:text-primary duration-200" size='xl'/>
+            </a>
+            <a
+                href='https://github.com/jolenechong'
+                target="_blank"
+                rel="noreferrer">
+                <FontAwesomeIcon icon={faGithub} className="pr-3 text-textPrimary hover:text-primary duration-200" size='xl'/>
+            </a>
             </div>
           </div>
           <div className={styles.column}>
