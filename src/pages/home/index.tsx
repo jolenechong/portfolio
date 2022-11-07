@@ -42,7 +42,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init({duration: 2000, easing: 'ease-in-out', offset: 300});
 
-    fetch("https://gh-pinned-repos.egoist.sh/?username=jolenechong")
+    fetch("https://gh-pinned-repos.egoist.dev/?username=jolenechong")
       .then((response) => response.json())
       .then((data) => {
         setRepositories(data);
