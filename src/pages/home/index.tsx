@@ -22,11 +22,11 @@ export default function Home() {
       "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/WordConnect/README.md",
       "thumbnail": "WordConnect.webp"
     },
-    "Am I Write?" : {
+    "NeuroNote" : {
       "techStack": ["Kotlin", "Android Studio", "TensorflowLite"],
       "desc" : "Mobile Application with AI  to help identify early stages in youths at risk. In partnership with Society Against Family Violence.",
-      "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/AmIWrite/README.md",
-      "thumbnail": "AmIWrite.webp"
+      "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/NeuroNote/README.md",
+      "thumbnail": "NeuroNote.webp"
     },
     "ChatHealth WebApp": {
       "techStack": ["NodeJS", "Javascript", "BoredAPI", "Socket.io"],
