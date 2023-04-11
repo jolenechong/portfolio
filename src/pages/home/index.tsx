@@ -28,13 +28,20 @@ export default function Home() {
       "sourceLink": "https://github.com/jolenechong/portfolio/tree/main/src/assets/NeuroNote/README.md",
       "thumbnail": "NeuroNote.webp"
     },
-    "ChatHealth WebApp": {
-      "techStack": ["NodeJS", "Javascript", "BoredAPI", "Socket.io"],
-      "desc" : "With ChatHealth we would be able to rant annonymously and get your mind off your struggles.",
-      "previewLink": "https://chathealth.onrender.com/",
-      "sourceLink": "https://github.com/jolenechong/ChatHealth",
-      "thumbnail": "ChatHealth.webp"
-    }
+    "Categorizing Essays with AI" : {
+      "techStack": ["nltk", "gensim", "python"],
+      "desc" : "Multi-Class Text Classification and LDA Topic Modelling to categorize essays into different topics.",
+      "previewLink": "https://categorizing-essays-ai.streamlit.app/", 
+      "sourceLink": "https://github.com/jolenechong/categorizingEssays",
+      "thumbnail": "CategorizingEssaysAI.webp"
+    },
+    // "ChatHealth WebApp": {
+    //   "techStack": ["NodeJS", "Javascript", "BoredAPI", "Socket.io"],
+    //   "desc" : "With ChatHealth we would be able to rant annonymously and get your mind off your struggles.",
+    //   "previewLink": "https://chathealth.onrender.com/",
+    //   "sourceLink": "https://github.com/jolenechong/ChatHealth",
+    //   "thumbnail": "ChatHealth.webp"
+    // }
   } as ProjectsList;
 
   const [repositories, setRepositories] = useState([]);
