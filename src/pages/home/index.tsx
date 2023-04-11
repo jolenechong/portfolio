@@ -29,7 +29,7 @@ export default function Home() {
       "thumbnail": "NeuroNote.webp"
     },
     "Categorizing Essays with AI" : {
-      "techStack": ["nltk", "gensim", "python"],
+      "techStack": ["NLTK", "Gensim", "Python"],
       "desc" : "Multi-Class Text Classification and LDA Topic Modelling to categorize essays into different topics.",
       "previewLink": "https://categorizing-essays-ai.streamlit.app/", 
       "sourceLink": "https://github.com/jolenechong/categorizingEssays",
