@@ -13,7 +13,7 @@ export default function Footer() {
         <div className={styles.row}>
           <div className={styles.column}>
             <img src={Logo} width="100" alt=""></img>
-            <p className={styles.CTA}>Building websites that work for you.</p>
+            <p className={styles.CTA}>Building interfaces that work for you.</p>
             <p>
               Currently open for freelance projects and open to work
               opportunities. Have a fun project in mind? Or looking for a

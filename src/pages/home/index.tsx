@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import ArchiveProjectBox from "../../components/home/archiveProject";
 import IntroSection from "../../components/home/introSection";
-import ProjectBox, { Project, ProjectDetails } from "../../components/home/project";
+import ProjectBox, { ProjectDetails } from "../../components/home/project";
+import { IPinnedRepo } from "get-pinned-repos";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
@@ -44,17 +45,18 @@ export default function Home() {
     // }
   } as ProjectsList;
 
-  const [repositories, setRepositories] = useState([]);
+  const [repositories, setRepositories] = useState<IPinnedRepo[]>([]);
 
   useEffect(() => {
     AOS.init({duration: 2000, easing: 'ease-in-out', offset: 300});
 
-    fetch("https://gh-pinned-repos.egoist.dev/?username=jolenechong")
-      .then((response) => response.json())
-      .then((data) => {
-        setRepositories(data);
-      });
-  }, []);
+    const fetchData = async () => {
+      const pinned = await fetch(`/.netlify/functions/repos`)
+        .then((res) => res.json());
+      setRepositories(pinned);
+    };
+    fetchData()
+  }, []);  
 
   return (
     <>
@@ -67,8 +69,8 @@ export default function Home() {
           {
             Object.keys(projects).map((projectName, index) => {
               return (
-                <div data-aos="fade-up">
-                  <ProjectBox name={projectName} details={projects[projectName]} key={index} />
+                <div data-aos="fade-up" key={index}>
+                  <ProjectBox name={projectName} details={projects[projectName]} />
                 </div>
               )
             })
@@ -83,8 +85,8 @@ export default function Home() {
         <div className="flex flex-wrap justify-center">
           {
             repositories.map((repo, index) => 
-              <div data-aos="fade-up">
-                <ArchiveProjectBox repo={repo} key={index}/>
+              <div data-aos="fade-up" key={index}>
+                <ArchiveProjectBox repo={repo ? repo : true}/>
               </div>
             )
           }
