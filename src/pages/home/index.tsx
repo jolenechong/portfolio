@@ -52,7 +52,8 @@ export default function Home() {
 
     const fetchData = async () => {
       const pinned = await fetch(`/repos`)
-        .then((res) => res.json());
+        .then((res) => res.json())
+        .then((data) => data.body);
       setRepositories(pinned);
     };
     fetchData()
