@@ -51,7 +51,7 @@ export default function Home() {
     AOS.init({duration: 2000, easing: 'ease-in-out', offset: 300});
 
     const fetchData = async () => {
-      const pinned = await fetch(`/.netlify/functions/repos`)
+      const pinned = await fetch(`/repos`)
         .then((res) => res.json());
       setRepositories(pinned);
     };
