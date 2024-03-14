@@ -1,4 +1,3 @@
-// import { Client, IPinnedRepo } from "get-pinned-repos";
 import { GraphQLClient, gql } from 'graphql-request';
 
 export async function onRequestGet({ env }) {
@@ -13,7 +12,7 @@ export async function onRequestGet({ env }) {
       fetch: fetch,
       headers: {
         "Authorization": `Bearer ${token}`,
-        "User-Agent": "Portfolio" // Replace "YourAppName" with the name of your application
+        "User-Agent": "Portfolio"
       }
     });
 
