@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import ArchiveProjectBox from "../../components/home/archiveProject";
 import IntroSection from "../../components/home/introSection";
 import ProjectBox, { ProjectDetails } from "../../components/home/project";
-import { IPinnedRepo } from "get-pinned-repos";
 import AOS from "aos";
 import 'aos/dist/aos.css'
 
