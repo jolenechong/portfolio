@@ -16,7 +16,7 @@ export default function IntroSection({techStackList}: IProps) {
                         jolenechong7@gmail.com</a></p>
                 <div className="text-center pt-4 text-sm">
                     <p>Freelance Web Developer</p>
-                    <p>Full-Stack Developer at CodeCollab</p>
+                    <p>Software Engineer at GHT</p>
                 </div>
 
                 <div className="flex justify-center flex-wrap pt-8">

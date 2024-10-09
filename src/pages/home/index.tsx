@@ -34,7 +34,7 @@ export interface IPinnedRepo {
 export default function Home() {
 
   // configs for home page
-  const techStackList = ["HTML/CSS", "Javascript", "ReactJS", "NodeJS", "Typescript", "Python", "Flask", "Kotlin", "NextJS"]
+  const techStackList = ["HTML/CSS", "Javascript", "ReactJS", "NodeJS", "Typescript", "Python", "Flask", "Java", "Kotlin", "NextJS"]
 
   const projects = {
     "WordConnect" : {
