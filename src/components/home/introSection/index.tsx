@@ -18,8 +18,8 @@ export default function IntroSection({ techStackList }: IProps) {
                                 remotely available at <a href="mailto:jolenechong7@gmail.com">
                                     jolenechong7@gmail.com</a></p>
                             <div className="text-center pt-4 text-sm">
-                                <p>Freelance Web Developer</p>
-                                <p>Software Engineer at Great Health Technologies</p>
+                                <p>AI/Data Engineer</p>
+                                <p>AI Engineer at Marvell Technology</p>
                             </div>
                         </div>
 
